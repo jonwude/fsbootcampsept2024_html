@@ -37,9 +37,25 @@
       
 
         x = 5;
-            console.log("The value of x before is" + x);
-            console.log("The value of x after is" + x);
+            console.log("The value of x before is " + x);
+            console.log("The value of x after is " + x);
         
+            console.log("Button is clicked");
+
+        for(let i =1; i<15; i=i+1){
+            console.log(i)
+        }
+            function calculateSum(){
+            
+              var total = 0 
+            for(i=1;i<=100; i = i+1){
+                total = total + i;
+            }
+                    console.log(total)
+                }
+                
+            
+
         // added comment for git test
         
         // for(let i = 0; i < 100; i++){
@@ -49,4 +65,7 @@
 
        </script>
     </head>
+    <body>
+        <button onclick="calculateSum()">Calculate the Sum</button>
+    </body>
 </html>

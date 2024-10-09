@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Javascript</title>
+  </head>
+  <script>
+    x = 3;
+    console.log("The value of x is = " + x);
+    x = x + 1;
+    console.log("after x = x + 1 the value is = " + x);
+
+    x += 1;
+
+    console.log("after x +=1 the value is = " + x);
+
+    console.log("Before = " + x);
+    x++;
+    console.log("After = " + x);
+
+    console.log("Before = " + x);
+    ++x;
+    console.log("After = ++x" + x);
+
+    var sum = 0;
+    for (let i = 1; i <= 5; i++) {
+      sum = sum + 1;
+      console.log("The value of i", i);
+      console.log("The value of sum", sum);
+    }
+
+    var student = ["Mihir", "Deepika", "Darcey", "Judith"];
+
+
+    for (i = 0; i < student.length; i = i + 1) {
+      helloStudents(student[i]);
+    }
+
+    function showName() {
+      console.log("Is function executed?");
+      var first_name = document.getElementById("first_name").value;
+      var hours = document.getElementById("hours").value;
+      var rate = document.getElementById("rate").value;
+      console.log("Your name is " + first_name + " your salary " + hours * rate);
+    }
+
+
+    function helloStudents(name){
+        console.log("Hello " + name);
+    }
+
+    helloStudents("Harsh")
+
+
+    
+
+
+
+  </script>
+
+  <body>
+    Name <input type="text" name="first_name" id="first_name" /> <br />
+    Hours <input type="number" name="hours" id="hours" /><br />
+    Hourly Rate <input type="text" name="rate" id="rate" /><br />
+
+    <button onclick="showName()">Show Name</button>
+  </body>
+</html>

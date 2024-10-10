@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>Media Queries</title>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
+  </head>
+  <style>
+    /* @media only screen {
+        body{
+            background-color: yellow;
+            color: red;
+        }
+
+    } */
+
+    @media only print {
+        body {
+            background-color: pink;
+            color: aqua;
+        }
+    }
+
+    @media screen, print {
+        .para {
+            background-color: lightgreen;
+            color: blue;
+        }
+    }
+
+
+/* @media only screen and (max-width: 460px){
+        .header, .para {
+            background-color: yellow;
+            color: red;
+            font-size: 16px;
+        }    
+
+    } */
+
+    /* @media only screen and (min-width: 460px){
+        .header, .para {
+            background-color: pink;
+            color: green;
+            font-size: 28px;
+        }
+
+    } */
+
+    /* @media only screen and (min-width: 768px){
+        .header, .para {
+            background-color: lightblue;
+            color: pink;
+            font-size: 60px;
+        } */
+
+
+
+    /* @media (max-height: 960px){
+       body {
+        background-color: greenyellow;
+        color: red
+       };
+
+    }
+
+    @media (min-height: 960px){
+       body{
+        background-color: lightblue;
+        color: red;
+       }
+
+    }
+
+    @media (orientation: potrait){
+        body{
+            background-color: burlywood;
+            color: black;
+        }
+    }
+
+    @media (orientation: landscape){
+        body{
+            background-color: rebeccapurple;
+            color: brown;
+        }
+    } */
+  </style>
+  <body>
+    <h1 class= header>This is my heading</h1>
+    <p class=para>This is my paragraph</p>
+  </body>
+</html>

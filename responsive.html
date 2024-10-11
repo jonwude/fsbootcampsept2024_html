@@ -1,18 +1,23 @@
 <html>
     <head>
         <title>Responsive</title>
+        <meta name="viewport" content="width=device-width" initial-scale="1.0" />
     </head>
     <style>
         .header {
-            font-size: 40px;
+            font-size: 10vh;
         }
 
         .para {
             font-size: 2cm;
         }
+        .img {
+            width: 50vw;
+            height: 50vh;
+        }
     </style>
     <body>
-        <div class="header">
+        <!-- <div class="header">
         This is the header
         
         <div class="para">
@@ -21,9 +26,14 @@
         <div class="para">
             I am inside this paragraph
             </div>
-            <div class="para">
-                I added this paragraph test
-                </div>
-    </div>
-    </body>
+    </div> -->
+    
+    <h1 class="header">This is my heading</h1>
+    <p class="para">This is my paragraph</p>
+   <img src="data:image/jpeg;base64,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" alt="A rose not showing">
+
+</body>
+
+
+
 </html>

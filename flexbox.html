@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Flexbox</title>
+        <style>
+            .flex-container {
+                display: flex;
+                background-color: aqua;
+                flex-direction: row;
+                gap: 2px;
+            }
+
+            .flex-container > div {
+                background-color: pink;
+                border: 1px solid red;
+
+            }
+
+            @media (max-width:800px) {
+                .flex-container {
+                    display: flex;
+                    background-color: aqua;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+            }
+        </style>
+    </head>
+
+
+    
+    <body>
+        <div class="flex-container">
+            <div>Home</div>
+            <div>Contact</div>
+            <div>About Me</div>
+        </div>
+    </body>
+</html>

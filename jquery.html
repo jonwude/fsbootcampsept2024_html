@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("h1").html("Change the heading to paragraph");
+        $("#para_1").text(
+          "This will just change the p tag.The above one will apply"
+        );
+
+        $(".class_example").css("color", "red");
+        $("p").css({
+          color: "red",
+          "background-color": "yellow",
+          "font-size": "20px",
+        });
+
+        $("div").css({
+          color: "pink",
+          "background-color": "green",
+          "font-size": "15px",
+          height: "200px",
+        });
+
+        $(".unique_para").text("This is my para");
+
+        $("h3").addClass("header");
+        $("h4").removeClass("header");
+
+        $('#hide_para').click(function(){
+            $('p').hide();
+        });
+
+        $('#show_para').click(function(){
+            $('p').show();
+        });
+
+
+        
+
+
+        $("button").click(function () {
+          $("p").hide();
+        });
+      });
+    </script>
+<style>
+   .header {
+ background-color: yellow;
+ color: aqua;
+ font-size: 30px;
+ padding: 30px;
+   }
+
+</style>
+
+  </head>
+  <body>
+    <h1>This is my heading 1</h1>
+    <p id="para_1">This is my tag</p>
+    <p>This is another p tag</p>
+    <p class="class_example">This is my 3rd tag</p>
+
+    <div>This is a div</div>
+
+    <div>This is a div</div>
+  </body>
+</html>
